@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
-
+import './index.css'
 import { Home } from "./pages/home";
 import Login from "./pages/login";
 import Admin from "./pages/admin";
