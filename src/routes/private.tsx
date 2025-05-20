@@ -30,7 +30,10 @@ setSigned(true);
     setSigned(false);
 }
 })
-
+//nao ficar procurando sempre,assim ele cancela(retorna o fim) do changed
+return ()=>{
+unsub();
+}
 
     },[])
     

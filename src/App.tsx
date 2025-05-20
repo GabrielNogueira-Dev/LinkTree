@@ -21,7 +21,7 @@ element:<Private><Admin/></Private>
   },
   {
 path:"/admin/social",
-element:<Networks/>
+element:<Private><Networks/></Private>
   }
 ])
 

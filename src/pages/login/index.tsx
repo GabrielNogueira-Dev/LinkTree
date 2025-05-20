@@ -24,7 +24,7 @@ signInWithEmailAndPassword(auth,email,password)
   navigate("/admin",{replace:true})
 })
 .catch((error)=>{
-console.log(error)
+console.log(error);
 })
 }
 
