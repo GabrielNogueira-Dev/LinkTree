@@ -38,7 +38,7 @@ unsub();
     },[])
     
 if(loading){
-    return <div></div>
+    return <div>Carregando..</div>
 }
 
 if(!signed){

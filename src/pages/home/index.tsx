@@ -1,6 +1,6 @@
 import { Social } from "../../components/social"
 
-import { FaFacebook,FaInstagram,FaLinkedin } from "react-icons/fa"
+import { FaGithub,FaInstagram,FaLinkedin } from "react-icons/fa"
 
 export function Home() {
 
@@ -14,14 +14,14 @@ export function Home() {
       <section className="bg-white mb-4 w-full py-2 rounded-lg select-none transition-transform hover:scale-105 cursor-pointer">
         <a>
          <p className="text-base md:text-lg ">
-          Canal do youtube
+         ...
          </p>
         </a>
 
       </section>
         <footer className="flex justify-center gap-3 my-4">
           <Social url="https://github.com/GabrielNogueira-Dev">
-              <FaFacebook size={35} color="#FFF"/>
+              <FaGithub size={35} color="#FFF"/>
           </Social>
            <Social url="https://www.linkedin.com/in/gabriel-nogueira-2944b5335?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BEKL8y86pTdeXKj%2B7CvISSw%3D%3D">
               <FaLinkedin size={35} color="#FFF"/>
