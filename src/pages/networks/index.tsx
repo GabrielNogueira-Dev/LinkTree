@@ -1,4 +1,4 @@
-import { FormEvent, useState } from "react"
+import { FormEvent, useEffect, useState } from "react"
 import { Header } from "../../components/header"
 import { Input } from "../../components/input"
 
@@ -10,6 +10,21 @@ const [git,setGit] = useState("")
 const [instagram,setInstagram] = useState("")
 const [linkedin,setLinkedin] = useState("")
 
+useEffect(()=>{
+  function loadLinks(){
+    const docRef = doc(db,"social","link")
+    getDoc(docRef)
+    .then((snapshot)=>{
+if(snapshot.data() !== undefined){
+  setGit(snapshot.data()?.GitHub)
+  setInstagram(snapshot.data()?.Instagram)
+  setLinkedin(snapshot.data()?.Linkedin)
+  
+}
+    })
+  }
+  loadLinks()
+},[])
 
 function handleRegister(e:FormEvent){
 e.preventDefault();
