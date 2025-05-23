@@ -55,6 +55,9 @@ console.log(error);
       Acessar
      </button>
    </form>
+   <div className="flex justify-center  ">
+          <h2 className="mt-5 p-1 text-white rounded"><Link to="/">Vá para Home</Link></h2>
+        </div>
       </div>
 
   )

@@ -1,6 +1,6 @@
 import { useState,useEffect } from "react"
 import { Social } from "../../components/social"
-
+import { Link } from "react-router-dom"
 import { FaGithub,FaInstagram,FaLinkedin } from "react-icons/fa"
 import { db } from "../../components/services/firebaseconnection"
 import { getDocs,collection,orderBy,
@@ -106,6 +106,7 @@ loadsocialLinks()
          
         </footer>
         )}
+       
      </main>
       </div>
 
